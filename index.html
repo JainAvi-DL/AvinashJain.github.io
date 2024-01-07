@@ -24,7 +24,27 @@
 							<div class="inner">
 								<h4>Hello, World! </h4>
 								<h1>I'm Avinash jain </h1>
-								<p>I'm a <b>Azure Data Engineer</b> currently based in Ahmedabad/Jaipur. <br>Passionate about leveraging <b>Data Engineering</b> and <b>Data Analytics </b> to build <br> products & services which help solve real-world business problems.<br />
+								<p>I'm a 
+									<span id="text"></span>
+								  
+								  
+								  <script>
+								  const texts = ["Azure Data Engineer", "Data Engineer", "Cloud Engineer", "Data Analyst"];
+								  let count = 0;
+								  
+								  setInterval(() => {
+									const text = document.getElementById("text");
+									const nextText = texts[count];
+									text.innerText = nextText;
+									
+									count++;
+									if(count >= texts.length) {
+									  count = 0; 
+									}
+								  }, 2000);
+								  </script>
+								   
+									<br> currently based in Ahmedabad/Jaipur. <br>Passionate about leveraging <b>Data Engineering</b> and <b>Data Analytics </b> to build <br> products & services which help solve real-world business problems.<br />
 								</p>
 							</div>
 						</div>
